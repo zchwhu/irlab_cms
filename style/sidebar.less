@@ -1,0 +1,60 @@
+@import "variables";
+@import "mixin";
+@import "icon";
+
+.ir-sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  width: 240px;
+  height: 100%;
+
+  color: #fff;
+  background-color: @sidebarBg;
+}
+
+.ir-sidebar-top{
+  height: 70px;
+  padding: 5px 0 15px 10px;
+}
+
+.ir-logo{
+  display: block;
+  width: auto;
+  height: 70px;
+}
+
+.ir-menu-item{
+  a{
+    display: block;
+    padding: 12px 30px;
+
+    line-height: 20px;
+    font-size: 15px;
+    color: #fff;
+    .transition(all .4s ease-in-out 0s);
+    border-width: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    &:hover{
+      color: @basicColor;
+      background-color: @sidebarActiveBg;
+      border-top-color: rgba(255,255,255,0.1);
+      border-bottom-color: rgba(255,255,255,0.1);
+    }
+    &.active{
+      color: @basicColor;
+      background-color: @sidebarActiveBg;
+    }
+  }
+}
+
+.ir-sidebar [class^="icon-"],
+.ir-sidebar [class*=" icon-"]{
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+}

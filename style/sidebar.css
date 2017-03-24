@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'ir-icon';
+  src: url('../fonts/ir-icon.eot?5g13gd');
+  src: url('../fonts/ir-icon.eot?5g13gd#iefix') format('embedded-opentype'), url('../fonts/ir-icon.ttf?5g13gd') format('truetype'), url('../fonts/ir-icon.woff?5g13gd') format('woff'), url('../fonts/ir-icon.svg?5g13gd#ir-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ir-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+  content: "\e900";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-books:before {
+  content: "\e920";
+}
+.icon-file-text2:before {
+  content: "\e926";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-bookmarks:before {
+  content: "\e9d3";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-exit:before {
+  content: "\ea14";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-ctrl:before {
+  content: "\ea50";
+}
+.ir-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 240px;
+  height: 100%;
+  color: #fff;
+  background-color: #424f63;
+}
+.ir-sidebar-top {
+  height: 70px;
+  padding: 5px 0 15px 10px;
+}
+.ir-logo {
+  display: block;
+  width: auto;
+  height: 70px;
+}
+.ir-menu-item a {
+  display: block;
+  padding: 12px 30px;
+  line-height: 20px;
+  font-size: 15px;
+  color: #fff;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+.ir-menu-item a:hover {
+  color: #65cea7;
+  background-color: #353f4f;
+  border-top-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.ir-menu-item a.active {
+  color: #65cea7;
+  background-color: #353f4f;
+}
+.ir-sidebar [class^="icon-"],
+.ir-sidebar [class*=" icon-"] {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+}

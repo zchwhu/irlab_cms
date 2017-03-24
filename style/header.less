@@ -1,0 +1,86 @@
+@import "variables";
+@import "mixin";
+
+.ir-header{
+  position: fixed;
+  top: 0;
+  left: @sidebarWidth;
+  right: 0;
+  z-index: 100;
+
+  height: @headerHeight;
+
+  background-color: #fff;
+  border-bottom: 1px solid #eff0f4;
+}
+
+.ir-header-admin{
+  float: right;
+  position: relative;
+
+  height: @headerHeight;
+  margin-right: 15px;
+  padding: 0 8px;
+
+  color: #333;
+  .transition(all .4s ease-in-out 0s);
+
+  cursor: pointer;
+  &:hover{
+    color: @basicColor;
+    background-color: @sidebarBg;
+  }
+  img{
+    width: 30px;
+    height: 25px;
+    margin-top: 12px;
+    vertical-align: top;
+  }
+  .ir-header-admin-name{
+    font-size: 13px;
+  }
+  .icon-play3{
+    .displayInlineBlock();
+
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 10px;
+
+    .transform(rotate(90deg));
+  }
+}
+
+.ir-header-menu{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 200px;
+
+  padding: 5px;
+  background-color: @basicColor;
+  .borderRadius(2px);
+  a{
+    display: block;
+    padding: 7px 10px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #fff;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: -12px;
+
+    border-style: solid;
+    border-color: transparent transparent @basicColor transparent;
+    border-width: 6px;
+  }
+}
+
+.ir-header-menu [class^="icon-"],
+.ir-header-menu [class*=" icon-"]{
+  margin-right: 5px;
+  vertical-align: middle;
+  font-size: 18px;
+}

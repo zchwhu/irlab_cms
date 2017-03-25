@@ -1,0 +1,43 @@
+.ir-panel{
+  .boxShadow(0 1px 1px rgba(0,0,0,.05));
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.ir-panel-header{
+  padding: 10px 10px;
+  overflow: hidden;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+}
+
+.ir-panel-toolbar{
+  float: right;
+  a{
+    .displayInlineBlock();
+    padding: 10px;
+    margin-left: 3px;
+
+    font-size: 14px;
+    color: #858582;
+    background-color: #E3E4E8;
+    .transition(all .3s ease-in-out 0s);
+    .borderRadius(2px);
+    cursor: pointer;
+    &:hover{
+      color: #fff;
+      background-color: @basicColor;
+    }
+  }
+}
+
+.ir-panel-body{
+  padding: 10px;
+  img{
+    display: block;
+    width: 130px;
+    height: 130px;
+    margin: 15px auto;
+    .borderRadius(50%);
+    border: 5px solid #F1F2F7;
+  }
+}

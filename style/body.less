@@ -1,0 +1,31 @@
+.ir-main{
+  position: absolute;
+  left: 240px;
+  right: 0;
+  min-height: 100%;
+  .boxSizing();
+  padding-top: @headerHeight;
+  padding-bottom: @footerHeight;
+  background-color: @mainBodyBg;
+}
+
+.ir-body{
+  padding: 15px;
+}
+
+.ir-title{
+  margin: 10px 0 20px 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #49586e;
+  a{
+    .displayInlineBlock();
+    color: #fff;
+    padding: 0 14px;
+    margin-left: 10px;
+    line-height: 32px;
+    font-size: 14px;
+    .borderRadius(14px);
+    background-color: @basicColor;
+  }
+}

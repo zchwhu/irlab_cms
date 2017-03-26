@@ -1,4 +1,9 @@
 .ir-panel{
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.ir-panel-inner{
   .boxShadow(0 1px 1px rgba(0,0,0,.05));
   background-color: #fff;
   border-radius: 4px;
@@ -30,14 +35,17 @@
   }
 }
 
+.ir-panel-bind{
+  float: left;
+  font-weight: 700;
+  color: #d9534f;
+  span{
+    .displayInlineBlock();
+    padding: 5px;
+    font-size: 22px;
+  }
+}
+
 .ir-panel-body{
   padding: 10px;
-  img{
-    display: block;
-    width: 130px;
-    height: 130px;
-    margin: 15px auto;
-    .borderRadius(50%);
-    border: 5px solid #F1F2F7;
-  }
 }

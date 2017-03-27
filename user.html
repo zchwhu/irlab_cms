@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style/reset.css" type="text/css">
+    <link rel="stylesheet" href="style/user.css" type="text/css">
+</head>
+<body>
+    <div class="ir-sidebar">
+        <div class="ir-sidebar-top">
+            <img class="ir-logo" src="img/sidebar_logo.png">
+        </div>
+        <ul class="ir-menu">
+            <li class="ir-menu-item active">
+                <a href="#" class="ir-menu-link">
+                    <span class="icon-user-tie"></span>
+                    <span class="ir-menu-text">用户管理</span>
+                </a>
+            </li>
+            <li class="ir-menu-item">
+                <a href="#" class="ir-menu-link">
+                    <span class="icon-user"></span>
+                    <span class="ir-menu-text">成员管理</span>
+                </a>
+            </li>
+            <li class="ir-menu-item">
+                <a href="#" class="ir-menu-link">
+                    <span class="icon-file-text2"></span>
+                    <span class="ir-menu-text">新闻管理</span>
+                </a>
+            </li>
+            <li class="ir-menu-item">
+                <a href="#" class="ir-menu-link">
+                    <span class="icon-books"></span>
+                    <span class="ir-menu-text">论文管理</span>
+                </a>
+            </li>
+            <li class="ir-menu-item">
+                <a href="#" class="ir-menu-link">
+                    <span class="icon-folder-open"></span>
+                    <span class="ir-menu-text">项目管理</span>
+                </a>
+            </li>
+            <li class="ir-menu-item">
+                <a href="#" class="ir-menu-link">
+                    <span class="icon-wrench"></span>
+                    <span class="ir-menu-text">工具管理</span>
+                </a>
+            </li>
+            <li class="ir-menu-item">
+                <a href="#" class="ir-menu-link">
+                    <span class="icon-images"></span>
+                    <span class="ir-menu-text">轮播管理</span>
+                </a>
+            </li>
+            <li class="ir-menu-item">
+                <a href="#" class="ir-menu-link">
+                    <span class="icon-exit"></span>
+                    <span class="ir-menu-text">退出登录</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="ir-main">
+        <div class="ir-header">
+            <div class="ir-header-admin">
+                <img src="img/logo.png">
+                <span class="ir-header-admin-name">Administrator</span>
+                <span class="icon-play3"></span>
+                <ul class="ir-header-menu">
+                    <li class="ir-header-item">
+                        <a href="#">
+                            <span class="icon-home"></span>
+                            返回主页
+                        </a>
+                    </li>
+                    <li class="ir-header-item">
+                        <a href="#">
+                            <span class="icon-exit"></span>
+                            退出登陆
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ir-body">
+            <div class="ir-panel">
+                <div class="ir-panel-inner">
+                    <div class="ir-panel-header">
+                        <h1 class="ir-panel-title">用户列表</h1>
+                        <div class="ir-panel-toolbar">
+                            <a href="#" class="icon-plus"></a>
+                        </div>
+                    </div>
+                    <div class="ir-panel-body">
+                        <table class="table table-bordered table-striped table-hover table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>用户名</th>
+                                    <th>个人信息</th>
+                                    <th>用户角色</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Admin</td>
+                                    <td>Xiaoxianglong</td>
+                                    <td>超级管理员</td>
+                                    <td class="table-toolbar">
+                                        <a href="#" class="icon-cog"></a>
+                                        <a href="#" class="icon-link"></a>
+                                        <a href="#" class="icon-bin"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>User1</td>
+                                    <td>gaohan</td>
+                                    <td>普通用户</td>
+                                    <td class="table-toolbar">
+                                        <a href="#" class="icon-cog"></a>
+                                        <a href="#" class="icon-link"></a>
+                                        <a href="#" class="icon-bin"></a>
+                                    </td>
+                                </tr><tr>
+                                    <td>User2</td>
+                                    <td>Zhaochaoye</td>
+                                    <td>普通用户</td>
+                                    <td class="table-toolbar">
+                                        <a href="#" class="icon-cog"></a>
+                                        <a href="#" class="icon-link"></a>
+                                        <a href="#" class="icon-bin"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>User3</td>
+                                    <td>Renke</td>
+                                    <td>普通用户</td>
+                                    <td class="table-toolbar">
+                                        <a href="#" class="icon-cog"></a>
+                                        <a href="#" class="icon-link"></a>
+                                        <a href="#" class="icon-bin"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination-wrapper">
+                            <ul class="ir-pagination">
+                                <li class="ir-page disabled">
+                                    <a href="#">← 上一页</a>
+                                </li>
+                                <li class="ir-page active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="ir-page">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="ir-page">
+                                    <a href="#">3</a>
+                                </li>
+                                <li class="ir-page">
+                                    <a href="#">4</a>
+                                </li>
+                                <li class="ir-page">
+                                    <a href="#">5</a>
+                                </li>
+                                <li class="ir-page">
+                                    <a href="#">下一页 → </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ir-footer">
+        2017&copy;武汉大学信息检索与知识挖掘研究所
+    </div>
+</body>
+</html>

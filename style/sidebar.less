@@ -45,11 +45,19 @@
       border-top-color: rgba(255,255,255,0.1);
       border-bottom-color: rgba(255,255,255,0.1);
     }
-    &.active{
+  }
+  &.active{
+    a{
       color: @basicColor;
       background-color: @sidebarActiveBg;
     }
   }
+}
+
+.ir-menu-text{
+  .displayInlineBlock();
+  vertical-align: middle;
+  line-height: 20px;
 }
 
 .ir-sidebar [class^="icon-"],

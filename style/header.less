@@ -48,9 +48,16 @@
 
     .transform(rotate(90deg));
   }
+  &:hover{
+    .ir-header-menu{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 }
 
 .ir-header-menu{
+  visibility: hidden;
   position: absolute;
   right: 0;
   top: 100%;
@@ -58,7 +65,9 @@
 
   padding: 5px;
   background-color: @basicColor;
+  opacity: 0;
   .borderRadius(2px);
+  .transition(all .4s);
   a{
     display: block;
     padding: 7px 10px;

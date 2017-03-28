@@ -117,32 +117,33 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>User1</td>
+                                    <td class="user-name">User1</td>
                                     <td>gaohan</td>
                                     <td>普通用户</td>
                                     <td class="table-toolbar">
-                                        <a href="#" class="icon-cog"></a>
-                                        <a href="#" class="icon-link"></a>
-                                        <a href="#" class="icon-bin"></a>
-                                    </td>
-                                </tr><tr>
-                                    <td>User2</td>
-                                    <td>Zhaochaoye</td>
-                                    <td>普通用户</td>
-                                    <td class="table-toolbar">
-                                        <a href="#" class="icon-cog"></a>
-                                        <a href="#" class="icon-link"></a>
-                                        <a href="#" class="icon-bin"></a>
+                                        <a href="#" class="user-cog-btn icon-cog"></a>
+                                        <a href="#" class="user-bind-btn icon-link"></a>
+                                        <a href="#" class="user-del-btn icon-bin"></a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>User3</td>
+                                    <td class="user-name">User2</td>
+                                    <td>Zhaochaoye</td>
+                                    <td>普通用户</td>
+                                    <td class="table-toolbar">
+                                        <a href="#" class="user-cog-btn icon-cog"></a>
+                                        <a href="#" class="user-bind-btn icon-link"></a>
+                                        <a href="#" class="user-del-btn icon-bin"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="user-name">User3</td>
                                     <td>Renke</td>
                                     <td>普通用户</td>
                                     <td class="table-toolbar">
-                                        <a href="#" class="icon-cog"></a>
-                                        <a href="#" class="icon-link"></a>
-                                        <a href="#" class="icon-bin"></a>
+                                        <a href="#" class="user-cog-btn icon-cog"></a>
+                                        <a href="#" class="user-bind-btn icon-link"></a>
+                                        <a href="#" class="user-del-btn icon-bin"></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -180,6 +181,36 @@
     <div class="ir-footer">
         2017&copy;武汉大学信息检索与知识挖掘研究所
     </div>
+    <div class="user-cog-modal modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">用户编辑</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="control-label">用户名：</label>
+                            <input type="text" class="form-control" name="username" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">输入新密码：</label>
+                            <input type="password" class="form-control" name="password" placeholder="请输入新的密码">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">确认新密码：</label>
+                            <input type="password" class="form-control" name="repeatpassword" placeholder="请确认新的密码">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary confirm-btn">确认提交</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <script src="script/lib/require.js" data-main="script/user.js"></script>
 </body>
 </html>

@@ -12,6 +12,13 @@
 
   background-color: #fff;
   border-bottom: 1px solid #eff0f4;
+  .transition(left .4s);
+}
+
+.collapsed{
+  .ir-header{
+    left: 0;
+  }
 }
 
 .ir-header-admin{
@@ -84,6 +91,23 @@
     border-style: solid;
     border-color: transparent transparent @basicColor transparent;
     border-width: 6px;
+  }
+}
+
+.ir-collapsed-btn{
+  .displayInlineBlock();
+  width: @headerHeight;
+  height: @headerHeight;
+  line-height: @headerHeight;
+  text-align: center;
+  font-size: 18px;
+  color: #212121;
+  border-right: 1px solid #e7e7e7;
+  background-color: #fff;
+  .transition(all .4s ease-in-out 0s);
+  &:hover{
+    background-color: @basicColor;
+    color: #fff;
   }
 }
 

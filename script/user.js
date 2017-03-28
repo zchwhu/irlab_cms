@@ -16,5 +16,9 @@ require(['jquery','jquery.modal','script/util/sidebar.js'],function ($,modal,sid
     var irSidebar = sidebar('.ir-sidebar',['.ir-main','.ir-header','.ir-footer'],'.icon-menu');
     irSidebar.init(SIDEBAR_WIDTH);
 
-    $()
+    $(document).on('click','.user-cog-btn',function () {
+        var $username = $(this).parent('td').siblings('.user-name').text();
+        $(".user-cog-modal input[name='username']").val($username);
+        $(".user-cog-modal").modal();
+    })
 })

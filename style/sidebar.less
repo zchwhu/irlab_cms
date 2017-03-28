@@ -13,6 +13,13 @@
 
   color: #fff;
   background-color: @sidebarBg;
+  .transition(left .4s);
+}
+
+.collapsed{
+  .ir-sidebar{
+    left: -@sidebarWidth;
+  }
 }
 
 .ir-sidebar-top{

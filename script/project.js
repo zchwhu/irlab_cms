@@ -9,11 +9,12 @@ requirejs.config({
     paths:{
         'jquery':'lib/jquery-1.7.1.min',
         'jquery.modal': 'lib/jquery.modal',
+        'bootstrap-datetimepicker':'lib/bootstrap-datetimepicker',
         'wangEditor': 'lib/wangEditor.min'
     }
 });
 
-require(['jquery','script/util/sidebar.js','script/util/upload.js','script/util/editor.js','wangEditor'],function ($,sidebar,upload) {
+require(['jquery','script/util/sidebar.js','script/util/upload.js','wangEditor','bootstrap-datetimepicker'],function ($,sidebar,upload) {
     $(function () {
         var irSidebar = sidebar('.ir-sidebar',['.ir-main','.ir-header','.ir-footer'],'.icon-menu');
         irSidebar.init(240);
@@ -22,6 +23,17 @@ require(['jquery','script/util/sidebar.js','script/util/upload.js','script/util/
             upload(".form-avatar",e);
         })
 
+        $('#beginTime,#endTime').datetimepicker({
+            language:  'zh-CN',
+            format: 'yyyy-mm',
+            autoclose: true,
+            todayBtn: true,
+            startView: 'year',
+            minView:'year',
+            maxView:'decade',
+            linked :true,
+            pickerPosition:"bottom-left"
+        });
         var editor = new wangEditor('editor');
         editor.config.menus = [
             'source',

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工具管理</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style/reset.css" type="text/css">
+    <link rel="stylesheet" href="style/wangEditor.min.css" type="text/css">
+    <link rel="stylesheet" href="style/bootstrap-datetimepicker.min.css" type="text/css">
+    <link rel="stylesheet" href="style/tooledit.css" type="text/css">
+</head>
+<body>
+<div class="ir-sidebar">
+    <div class="ir-sidebar-top">
+        <img class="ir-logo" src="img/sidebar_logo.png">
+    </div>
+    <ul class="ir-menu">
+        <li class="ir-menu-item">
+            <a href="#" class="ir-menu-link">
+                <span class="icon-user-tie"></span>
+                <span class="ir-menu-text">用户管理</span>
+            </a>
+        </li>
+        <li class="ir-menu-item">
+            <a href="#" class="ir-menu-link active">
+                <span class="icon-user"></span>
+                <span class="ir-menu-text">成员管理</span>
+            </a>
+        </li>
+        <li class="ir-menu-item">
+            <a href="#" class="ir-menu-link">
+                <span class="icon-file-text2"></span>
+                <span class="ir-menu-text">新闻管理</span>
+            </a>
+        </li>
+        <li class="ir-menu-item">
+            <a href="#" class="ir-menu-link">
+                <span class="icon-books"></span>
+                <span class="ir-menu-text">论文管理</span>
+            </a>
+        </li>
+        <li class="ir-menu-item">
+            <a href="#" class="ir-menu-link">
+                <span class="icon-folder-open"></span>
+                <span class="ir-menu-text">项目管理</span>
+            </a>
+        </li>
+        <li class="ir-menu-item">
+            <a href="#" class="ir-menu-link">
+                <span class="icon-wrench"></span>
+                <span class="ir-menu-text">工具管理</span>
+            </a>
+        </li>
+        <li class="ir-menu-item">
+            <a href="#" class="ir-menu-link">
+                <span class="icon-images"></span>
+                <span class="ir-menu-text">轮播管理</span>
+            </a>
+        </li>
+        <li class="ir-menu-item">
+            <a href="#" class="ir-menu-link">
+                <span class="icon-exit"></span>
+                <span class="ir-menu-text">退出登录</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="ir-main">
+    <div class="ir-header">
+        <div class="ir-header-admin">
+            <img src="img/logo.png">
+            <span class="ir-header-admin-name">Administrator</span>
+            <span class="icon-play3"></span>
+            <ul class="ir-header-menu">
+                <li class="ir-header-item">
+                    <a href="#">
+                        <span class="icon-home"></span>
+                        返回主页
+                    </a>
+                </li>
+                <li class="ir-header-item">
+                    <a href="#">
+                        <span class="icon-exit"></span>
+                        退出登陆
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ir-body">
+        <form class="form-horizontal">
+            <div class="ir-panel">
+                <div class="ir-panel-inner">
+                    <div class="ir-panel-header">
+                        <h1 class="ir-panel-title">工具编辑</h1>
+                    </div>
+                    <div class="ir-panel-body">
+                        <div class="form-group form-grid">
+                            <label class="col-sm-2 control-label">工具标题：</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="title" placeholder="输入工具标题">
+                            </div>
+                        </div>
+                        <div class="form-group form-grid">
+                            <label class="col-sm-2 control-label">开发日期：</label>
+                            <div class="col-sm-10">
+                                <div class='input-group date' id='beginTime'>
+                                    <input type='text' class="form-control" name="startDate" placeholder="选择开发日期">
+                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-grid">
+                            <label class="col-sm-2 control-label">工具链接：</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="title" placeholder="输入工具链接">
+                            </div>
+                        </div>
+                        <div class="form-group form-grid">
+                            <label class="col-sm-2 control-label">工具介绍：</label>
+                            <div class="col-sm-10">
+                                <textarea id="editor" name="content"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group form-grid">
+                            <label class="col-sm-2 control-label">头图：</label>
+                            <div class="col-sm-10">
+                                <div class="form-img-preview headimg-preview">
+                                    <img src="img/headimg_default.png" class="form-headimg">
+                                    <input type="file" name="headImg" title="点击上传" id="upload">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="ir-footer">
+    2017&copy;武汉大学信息检索与知识挖掘研究所
+</div>
+<script src="script/lib/require.js" data-main="script/tool.js"></script>
+</body>
+</html>

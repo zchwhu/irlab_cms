@@ -211,6 +211,64 @@
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+    <div class="user-bind-modal modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">用户绑定</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="user-bind-area">
+                        <label class="user-bind-title">当前绑定关系：</label>
+                        <div class="user-bind-aspect">
+                            <img src="img/user.png">
+                            <p>Administrator</p>
+                        </div>
+                        <img src="img/arrow.png" class="user-bind-arrow">
+                        <div class="user-bind-aspect">
+                            <img src="img/man.png">
+                            <p>xiaohuoxing</p>
+                        </div>
+                    </div>
+                    <form>
+                        <label class="user-bind-title">候选绑定成员：</label>
+                        <ul class="user-bind-list">
+                            <li class="user-bind-item active">
+                                <span>Xiaohuoxing</span>
+                                <input type="radio" name="bind">
+                            </li>
+                            <li class="user-bind-item">
+                                <input type="radio" name="bind">
+                                <span>Xiaog</span>
+                            </li>
+                            <li class="user-bind-item">
+                                <input type="radio" name="bind">
+                                <span>Xiaohuoxing</span>
+                            </li>
+                            <li class="user-bind-item">
+                                <input type="radio" name="bind">
+                                <span>Xiaohu</span>
+                            </li>
+                            <li class="user-bind-item">
+                                <input type="radio" name="bind">
+                                <span>Xiaohuoxing</span>
+                            </li>
+                            <li class="user-bind-item disabled">
+                                <input type="radio" name="bind" disabled>
+                                <span>Xiaoing</span>
+                            </li>
+                        </ul>
+                        <p class="user-bind-tip">您当前选择的成员是: <span></span></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary confirm-btn">确认提交</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <script src="script/lib/require.js" data-main="script/user.js"></script>
 </body>
 </html>

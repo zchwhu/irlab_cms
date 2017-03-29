@@ -8,3 +8,70 @@
 @import "pagination";
 @import "modal";
 @import "form";
+
+.user-bind-area{
+  margin-bottom: 30px;
+}
+
+.user-bind-aspect{
+  .displayInlineBlock();
+  vertical-align: middle;
+  text-align: center;
+  img{
+    width: 100px;
+    height: 100px;
+  }
+  p{
+    margin-top: 10px;
+  }
+}
+
+.user-bind-title{
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.user-bind-arrow{
+  .displayInlineBlock();
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.user-bind-item{
+  .displayInlineBlock();
+  position: relative;
+  padding: 0 14px;
+  line-height: 30px;
+  font-size: 13px;
+  color: #fff;
+  background-color: @basicColor;
+  .borderRadius(5px);
+  &.active{
+    background-color: #5cb85c;
+  }
+  &.disabled{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #999;
+  }
+  input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+.user-bind-tip{
+  margin-top: 15px;
+  span{
+    color: #555;
+    font-weight: 700;
+  }
+}
+

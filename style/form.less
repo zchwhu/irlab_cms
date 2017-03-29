@@ -36,14 +36,18 @@
 .form-img-preview{
   position: relative;
   .form-avatar{
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: 100%;
   }
   &.avatar-preview{
     width: 180px;
     height: 180px;
   }
-  input[name='avatar']{
+  &.headimg-preview{
+    width: 360px;
+    height: 180px;
+  }
+  input[type='file']{
     position: absolute;
     opacity: 0;
     left: 0;
@@ -51,5 +55,20 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+  }
+}
+
+.checkbox label{
+  margin-right: 10px;
+}
+
+.checkbox input[type='checkbox']{
+  margin-top: 2px;
+  vertical-align: middle;
+}
+
+input[type='file']{
+  &:focus{
+    outline: none;
   }
 }

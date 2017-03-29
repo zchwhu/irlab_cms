@@ -21,4 +21,16 @@ require(['jquery','jquery.modal','script/util/sidebar.js'],function ($,modal,sid
         $(".user-cog-modal input[name='username']").val($username);
         $(".user-cog-modal").modal();
     })
+
+    $(document).on("click",'.user-bind-btn',function () {
+        $(".user-bind-modal").modal();
+    })
+
+    $(document).on("click",".user-bind-item",function () {
+        if(!$(this).hasClass('disabled')){
+            $(this).addClass("active").siblings().removeClass("active");
+            var $selected = $(this).find("span").text();
+        }
+        $(".user-bind-tip span").text($selected);
+    })
 })

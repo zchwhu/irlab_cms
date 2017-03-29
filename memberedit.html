@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="style/reset.css" type="text/css">
+    <link rel="stylesheet" href="style/wangEditor.min.css" type="text/css">
     <link rel="stylesheet" href="style/memberedit.css" type="text/css">
 </head>
 <body>
@@ -139,7 +140,7 @@
                                 <div class="col-sm-10">
                                     <div class="form-img-preview avatar-preview">
                                         <img src="img/avatar_default.png" class="form-avatar">
-                                        <input type="file" name="avatar" title="点击上传">
+                                        <input type="file" name="avatar" title="点击上传" id="upload">
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +156,7 @@
                             <div class="form-group form-grid">
                                 <label class="col-sm-2 control-label">个人介绍：</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="text" name="name" placeholder="输入成员姓名">
+                                    <textarea id="editor"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -167,5 +168,6 @@
     <div class="ir-footer">
         2017&copy;武汉大学信息检索与知识挖掘研究所
     </div>
+    <script src="script/lib/require.js" data-main="script/memberedit.js"></script>
 </body>
 </html>

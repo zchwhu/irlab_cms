@@ -36,7 +36,7 @@ require(['jquery','jquery.modal','script/util/sidebar.js','script/util/reset.js'
     })
 
 
-    $('.user-add-modal').on('hidden.bs.modal', function (e) {
+    $('.paper-add-modal').on('hidden.bs.modal', function (e) {
         reset('.paper-add-form');
     })
 
@@ -44,49 +44,80 @@ require(['jquery','jquery.modal','script/util/sidebar.js','script/util/reset.js'
         reset('.paper-edit-form');
     })
 
-    $('#paperEditBtn').click(function () {
-        console.log("ok");
-        var $isValid = validate($(".paper-edit-form"),{
-            title:{
-                validators:{
-                    notEmpty:{
-                        message:"请输入论文引文"
-                    }
-                }
-            },
-            year:{
-                validators:{
-                    notEmpty:{
-                        message:"请输入论文出版时间"
-                    }
-                }
-            },
-            link: {
-                validators:{
-                    notEmpty:{
-                        message:"请输入论文全文地址"
-                    },
-                    isURL: {
-                        message:"链接格式错误，请重新输入"
-                    }
-                }
-            },
-            fullText: {
-                validators: {
-                    notEmpty: {
-                        message: "请上传论文全文"
-                    }
-                }
-            },
-            author: {
-                validators: {
-                    notEmpty: {
-                        message: "请选择论文作者"
-                    }
+    var validators = {
+        title:{
+            validators:{
+                notEmpty:{
+                    message:"请输入论文引文"
                 }
             }
-        })
+        },
+        year:{
+            validators:{
+                notEmpty:{
+                    message:"请输入论文出版时间"
+                }
+            }
+        },
+        link: {
+            validators:{
+                notEmpty:{
+                    message:"请输入论文全文地址"
+                },
+                isURL: {
+                    message:"链接格式错误，请重新输入"
+                }
+            }
+        },
+        fullText: {
+            validators: {
+                notEmpty: {
+                    message: "请上传论文全文"
+                }
+            }
+        },
+        author: {
+            validators: {
+                notEmpty: {
+                    message: "请选择论文作者"
+                }
+            }
+        }
+    };
 
+    $('#paperEditBtn').click(function () {
+        var $isValid = validate($(".paper-edit-form"),validators);
         return $isValid;
+    })
+
+    $('#paperAddBtn').click(function () {
+        console.log("click");
+        var $isValid = validate($(".paper-add-form"),validators);
+        return $isValid;
+    })
+
+    // 消除输入框错误提示信息
+    $("input[type='text'],input[type='password']").focus(function () {
+        if($(this).parents(".form-group").next(".help-block").length>0){
+            $(this).parents(".form-group").next(".help-block").remove();
+        }
+    })
+
+    //消除上传图片部分错误提示信息
+    $("input[type='file']").change(function () {
+        if($(this).val().length>0){
+            if($(this).parents(".form-group").next(".help-block").length>0){
+                $(this).parents(".form-group").next(".help-block").remove();
+            }
+        }
+    })
+
+
+    $("input[type='checkbox']").change(function () {
+        if($(this).is(":checked")){
+            if($(this).parents(".form-group").next(".help-block").length>0){
+                $(this).parents(".form-group").next(".help-block").remove();
+            }
+        }
     })
 })

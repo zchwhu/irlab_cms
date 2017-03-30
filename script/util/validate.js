@@ -13,7 +13,7 @@ define(['jquery'],function ($) {
         var $form = form;
         for(k in fields){
             var $formcontrol = $form.find('[name="'+k+'"]'),
-                $parent = fields[k].parent==='undefined'? $formcontrol.parents(fields[k].parent) : $formcontrol.parents(".form-group"),
+                $parent = fields[k].hasOwnProperty('parent')? $formcontrol.parents(fields[k].parent) : $formcontrol.parents(".form-group"),
                 $validators = fields[k].validators;
             for(var p in $validators){
                 switch(p){
@@ -33,7 +33,8 @@ define(['jquery'],function ($) {
                                 }
                                 break;
                             }
-                            case 'checkbox':{
+                            case 'checkbox':
+                            case 'radio':{
                                 if(!$formcontrol.is(":checked")){
                                     if($parent.next(".help-block").length==0){
                                         $("<small class='help-block'>"+$validators[p].message+"</small>")
@@ -132,7 +133,6 @@ define(['jquery'],function ($) {
                 }
             }
         }
-        console.log($errcount);
         return !($errcount>0);
     }
 

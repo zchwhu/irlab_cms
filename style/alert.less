@@ -1,0 +1,90 @@
+@import "mixin";
+@import "variables";
+
+.z-wrapper{
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgba(0,0,0,.6);
+  .transition(all 1s);
+  &.active{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.z-alert{
+  position: absolute;
+  z-index: 10000;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  .boxSizing();
+  color: @basicTextColor;
+  background-color: rgba(255,255,255,1);
+  .borderRadius(2px);
+  .transform(perspective(1200px) translateX(-50%) translateY(-50%) scale(1));
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  transition-property: all;
+  transition-duration: 400ms;
+  animation: show .4s;
+}
+
+@keyframes show {
+  from{
+    display: none;
+    .transform(perspective(1200px) translateX(-50%) translateY(-50%) scale(1.2));
+    opacity: 0;
+  }
+  to{
+    display: block;
+    .transform(perspective(1200px) translateX(-50%) translateY(-50%) scale(1));
+    opacity: 1;
+  }
+}
+
+.z-alert-header{
+  line-height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.z-alert-body{
+  padding: 25px 15px;
+  line-height: 25px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.z-alert-footer{
+  text-align: center;
+  span{
+    .displayInlineBlock();
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    cursor: pointer;
+  }
+  &.confirm{
+    span{
+      width: 50%;
+    }
+  }
+}
+
+.z-alert-confirm{
+  background-color: @basicColor;
+  color: #fff;
+}
+
+.z-alert-cancel{
+  color: #535353;
+}

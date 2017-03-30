@@ -11,7 +11,6 @@
   right: 0;
   opacity: 0;
   background-color: rgba(0,0,0,.6);
-  .transition(all 1s);
   &.active{
     visibility: visible;
     opacity: 1;
@@ -31,9 +30,7 @@
   .transform(perspective(1200px) translateX(-50%) translateY(-50%) scale(1));
   perspective: 1200px;
   transform-style: preserve-3d;
-  transition-property: all;
-  transition-duration: 400ms;
-  animation: show .4s;
+  animation: show .5s;
 }
 
 @keyframes show {

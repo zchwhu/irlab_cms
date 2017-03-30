@@ -15,11 +15,11 @@
 }
 
 .form-grid{
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eff2f7;
-  &:last-child{
-    border-bottom: none;
-  }
+  padding-top: 15px;
+  //border-top: 1px solid #eff2f7;
+  //&:first-child{
+  //  border-top: none;
+  //}
 }
 
 .form-tip{
@@ -72,4 +72,28 @@ input[type='file']{
   &:focus{
     outline: none;
   }
+}
+
+.form-confirm-btn{
+  display: block;
+  min-width: 120px;
+  line-height: 40px;
+  margin: 30px auto;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  background: @basicColor;
+  border: none;
+  .borderRadius(3px);
+  .transition(background 0.4s);
+  &:hover{
+    background: #1db671;
+  }
+}
+
+.help-block{
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #d9534f;
 }

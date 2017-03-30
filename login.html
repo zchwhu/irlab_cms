@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>系统登录</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/login.css">
@@ -18,12 +18,13 @@
                         <input type="text" name="username" placeholder="请输入用户名">
                     </div>
                     <div class="ir-login-form-control">
-                        <input type="text" name="username" placeholder="请输入密码">
+                        <input type="password" name="password" placeholder="请输入密码">
                     </div>
-                    <button type="submit">登 录</button>
+                    <button id="loginBtn">登 录</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="script/lib/require.js" data-main="script/login.js"></script>
 </body>
 </html>

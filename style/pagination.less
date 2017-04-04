@@ -35,3 +35,39 @@
     }
   }
 }
+
+.ir-pagination{
+  &.hasbg{
+    .ir-page{
+      a{
+        background-color: #fff;
+      }
+      &.active,
+      &:hover{
+        a{
+          color: #fff;
+          background-color: @basicColor;
+        }
+      }
+      &.disabled{
+        &:hover{
+          a{
+            color: #c7c7c7;
+            background-color: #fff;
+          }
+        }
+        a{
+          color: #c7c7c7;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+.ir-count{
+  .displayInlineBlock();
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}

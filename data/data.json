@@ -3,6 +3,23 @@
     {
       "username": "用户名重复",
       "password": "密码错误"
-    }
-
+    },
+  "user": {
+    "username": "admin",
+    "membername": "xiaohuoxing",
+    "members": [
+      {
+        "id": 0,
+        "name": "xiaoxianglong"
+      },
+      {
+        "id": 1,
+        "name": "xiaanglong"
+      },
+      {
+        "id": 2,
+        "name": "xiaoxglong"
+      }
+    ]
+  }
 }

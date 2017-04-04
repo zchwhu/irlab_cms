@@ -3,15 +3,17 @@
  */
 requirejs.config({
     shim: {
-        'jquery.modal': ['jquery']
+        'jquery.modal': ['jquery'],
+        'handlebars': ['jquery']
     },
     paths:{
         'jquery':'lib/jquery-1.7.1.min',
-        'jquery.modal': 'lib/jquery.modal'
+        'jquery.modal': 'lib/jquery.modal',
+        'handlebars':'lib/handlebars'
     }
 });
 
-require(['jquery','jquery.modal','script/util/sidebar.js','script/util/alert.js','script/util/reset.js','script/util/validate.js'],function ($,modal,sidebar,alert,reset,validate) {
+require(['jquery','jquery.modal','handlebars','script/util/sidebar.js','script/util/alert.js','script/util/reset.js','script/util/validate.js'],function ($,modal,Handlebars,sidebar,alert,reset,validate) {
     var SIDEBAR_WIDTH = 240;
     var irSidebar = sidebar('.ir-sidebar',['.ir-main','.ir-header','.ir-footer'],'.icon-menu');
     irSidebar.init(SIDEBAR_WIDTH);
@@ -23,6 +25,14 @@ require(['jquery','jquery.modal','script/util/sidebar.js','script/util/alert.js'
     })
 
     $(document).on("click",'.user-bind-btn',function () {
+        var myTemplate = Handlebars.compile($("#userBindModal").html());
+        $.ajax({url:"data/data.json",
+            success:
+            function (data) {
+            console.log('ok');
+            console.log(data);
+                $('#userBindBody').html(myTemplate(data.user));
+            }})
         $(".user-bind-modal").modal();
     })
 

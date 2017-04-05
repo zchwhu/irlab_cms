@@ -19,7 +19,164 @@
       {
         "id": 2,
         "name": "xiaoxglong"
+      },
+      {
+        "id": 3,
+        "name": "zhaochaoye"
       }
     ]
-  }
+  },
+  "users":[
+    {
+      "id": 0,
+      "username": "admin",
+      "name": "xiaoxianglong",
+      "user":{
+        "roleSet":"超级管理员"
+      }
+    },
+    {
+      "id": 1,
+      "username": "user1",
+      "name": "xiaolong",
+      "user":{
+        "roleSet":"普通管理员"
+      }
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "name": "xinglong",
+      "user":{
+        "roleSet":"一般管理员"
+      }
+    }
+  ],
+  "news": [
+    {
+      "id": 0,
+      "title": "武汉大学信息管理学院举行iConference会议",
+      "create_time": "2017年3月22日",
+      "short_content": "3月22日，由我校信息管理学院和成均馆大学共同主办的国际顶级信息学院联盟年会(iConference 2017)在汉举行，这是该年会首次在亚洲举办，吸引了国内外500多名信息管理领域的专家学者参加。",
+      "create_by": "方婧、肖香龙"
+    },
+    {
+      "id": 1,
+      "title": "武汉大学信息管理学院举行iConference会议",
+      "create_time": "2017年3月25日",
+      "short_content": "3月22日，由我校信息管理学院和成均馆大学共同主办的国际顶级信息学院联盟年会(iConference 2017)在汉举行，这是该年会首次在亚洲举办，吸引了国内外500多名信息管理领域的专家学者参加。",
+      "create_by": "方婧"
+    },
+    {
+      "id": 2,
+      "title": "武汉大学信息管理学院举行iConference会议",
+      "create_time": "2017年3月12日",
+      "short_content": "3月22日，由我校信息管理学院和成均馆大学共同主办的国际顶级信息学院联盟年会(iConference 2017)在汉举行，这是该年会首次在亚洲举办，吸引了国内外500多名信息管理领域的专家学者参加。",
+      "create_by": "肖香龙"
+    }
+  ],
+  "tools": [
+    {
+      "id": 0,
+      "title": "NEViewer",
+      "create_time": "2017年3月22日",
+      "short_remark": "NEViewer是武汉大学信息检索与知识挖掘研究所程齐凯博士开发的可视化软件",
+      "img_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491984723&di=bb0aea668a225b0452ac087384e0eeb2&imgtype=jpg&er=1&src=http%3A%2F%2Fimage.sciencenet.cn%2Falbum%2F201305%2F21%2F214151hpsf2ysjail295vs.jpg"
+    },
+    {
+      "id": 1,
+      "title": "武汉大学舆情系统",
+      "create_time": "2017年3月25日",
+      "short_remark": "武汉大学舆情系统是武汉大学信息检索与知识挖掘实验室与武汉大学边界与海洋研究院合作开发的舆情监控系统",
+      "img_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491390094747&di=79e3aacd8e3f5d822dfdaaa810a3784b&imgtype=0&src=http%3A%2F%2F3g.shjysoft.com%2Fuploads%2Fimage%2F20150921%2F1442837025.jpg"
+    }
+  ],
+  "projects":[
+    {
+      "id": 0,
+      "title": "基于引文分析的学术文献推荐",
+      "duration_time": "2016年7月-2017年10月",
+      "short_remark": "基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐",
+      "img_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491391414185&di=d88632e8ed188a18cfdaf8a37d3b70ef&imgtype=0&src=http%3A%2F%2Fwww.3dnew.com%2Ftupian%2F20120915%2Fxpic2044.jpg"
+    },
+    {
+      "id": 1,
+      "title": "学术文本结构功能识别相关信息及研究内容重大项目",
+      "duration_time": "2014年3月25日-2017年4月2日",
+      "short_remark": "基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐基于引文分析的学术文献推荐",
+      "img_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491391448926&di=46195bdac9c526f1fcdc28b99060c271&imgtype=0&src=http%3A%2F%2Fimg.taopic.com%2Fuploads%2Fallimg%2F111011%2F3022-11101112333391.jpg"
+    }
+  ],
+  "publications": [
+    {
+      "pub_year": "2016",
+      "paperList": [
+        {
+          "id": 1,
+          "apa_text": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS quarterly, 425-478.",
+          "apa_link": "http://www.baidu.com",
+          "pub_member": [
+            {
+              "member_id": 1,
+              "name": "xglong"
+            },
+            {
+              "member_id": 2,
+              "name": "xianglong"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "apa_text": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS quarterly, 425-478.",
+          "apa_link": "http://www.baidu.com",
+          "pub_member": [
+            {
+              "member_id": 1,
+              "name": "xianglong"
+            },
+            {
+              "member_id": 3,
+              "name": "xianglong"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pub_year": "2015",
+      "paperList": [
+        {
+          "id": 1,
+          "apa_text": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS quarterly, 425-478.",
+          "apa_link": "http://www.baidu.com",
+          "pub_member": [
+            {
+              "member_id": 1,
+              "name": "xglong"
+            },
+            {
+              "member_id": 2,
+              "name": "xianglong"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "apa_text": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS quarterly, 425-478.",
+          "apa_link": "http://www.baidu.com",
+          "pub_member": [
+            {
+              "member_id": 1,
+              "name": "xianglong"
+            },
+            {
+              "member_id": 3,
+              "name": "xianglong"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

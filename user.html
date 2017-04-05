@@ -106,47 +106,47 @@
                                     <th>操作</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="user-name">Admin</td>
-                                    <td>Xiaoxianglong</td>
-                                    <td>超级管理员</td>
-                                    <td class="table-toolbar">
-                                        <a href="#" class="user-cog-btn icon-cog"></a>
-                                        <a href="#" class="user-bind-btn icon-link"></a>
-                                        <a href="#" class="user-del-btn icon-bin"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="user-name">User1</td>
-                                    <td>gaohan</td>
-                                    <td>普通用户</td>
-                                    <td class="table-toolbar">
-                                        <a href="#" class="user-cog-btn icon-cog"></a>
-                                        <a href="#" class="user-bind-btn icon-link"></a>
-                                        <a href="#" class="user-del-btn icon-bin"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="user-name">User2</td>
-                                    <td>Zhaochaoye</td>
-                                    <td>普通用户</td>
-                                    <td class="table-toolbar">
-                                        <a href="#" class="user-cog-btn icon-cog"></a>
-                                        <a href="#" class="user-bind-btn icon-link"></a>
-                                        <a href="#" class="user-del-btn icon-bin"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="user-name">User3</td>
-                                    <td>Renke</td>
-                                    <td>普通用户</td>
-                                    <td class="table-toolbar">
-                                        <a href="#" class="user-cog-btn icon-cog"></a>
-                                        <a href="#" class="user-bind-btn icon-link"></a>
-                                        <a href="#" class="user-del-btn icon-bin"></a>
-                                    </td>
-                                </tr>
+                            <tbody id="userList">
+                                <!--<tr>-->
+                                    <!--<td class="user-name">Admin</td>-->
+                                    <!--<td>Xiaoxianglong</td>-->
+                                    <!--<td>超级管理员</td>-->
+                                    <!--<td class="table-toolbar">-->
+                                        <!--<a href="#" class="user-cog-btn icon-cog"></a>-->
+                                        <!--<a href="#" class="user-bind-btn icon-link"></a>-->
+                                        <!--<a href="#" class="user-del-btn icon-bin"></a>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class="user-name">User1</td>-->
+                                    <!--<td>gaohan</td>-->
+                                    <!--<td>普通用户</td>-->
+                                    <!--<td class="table-toolbar">-->
+                                        <!--<a href="#" class="user-cog-btn icon-cog"></a>-->
+                                        <!--<a href="#" class="user-bind-btn icon-link"></a>-->
+                                        <!--<a href="#" class="user-del-btn icon-bin"></a>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class="user-name">User2</td>-->
+                                    <!--<td>Zhaochaoye</td>-->
+                                    <!--<td>普通用户</td>-->
+                                    <!--<td class="table-toolbar">-->
+                                        <!--<a href="#" class="user-cog-btn icon-cog"></a>-->
+                                        <!--<a href="#" class="user-bind-btn icon-link"></a>-->
+                                        <!--<a href="#" class="user-del-btn icon-bin"></a>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class="user-name">User3</td>-->
+                                    <!--<td>Renke</td>-->
+                                    <!--<td>普通用户</td>-->
+                                    <!--<td class="table-toolbar">-->
+                                        <!--<a href="#" class="user-cog-btn icon-cog"></a>-->
+                                        <!--<a href="#" class="user-bind-btn icon-link"></a>-->
+                                        <!--<a href="#" class="user-del-btn icon-bin"></a>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
                             </tbody>
                         </table>
                         <div class="pagination-wrapper">
@@ -249,50 +249,7 @@
                     <h4 class="modal-title">用户绑定</h4>
                 </div>
                 <div class="modal-body" id="userBindBody">
-                    <!--<div class="user-bind-area">-->
-                        <!--<label class="user-bind-title">当前绑定关系：</label>-->
-                        <!--<div class="user-bind-aspect">-->
-                            <!--<img src="img/user.png">-->
-                            <!--<p>Administrator</p>-->
-                        <!--</div>-->
-                        <!--<img src="img/arrow.png" class="user-bind-arrow">-->
-                        <!--<div class="user-bind-aspect">-->
-                            <!--<img src="img/man.png">-->
-                            <!--<p>xiaohuoxing</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<form class="user-bind-form">-->
-                        <!--<label class="user-bind-title">候选绑定成员：</label>-->
-                        <!--<div class="form-group">-->
-                            <!--<ul class="user-bind-list">-->
-                                <!--<li class="user-bind-item">-->
-                                    <!--<span>Xiaohuoxing</span>-->
-                                    <!--<input type="radio" name="bind">-->
-                                <!--</li>-->
-                                <!--<li class="user-bind-item">-->
-                                    <!--<input type="radio" name="bind">-->
-                                    <!--<span>Xiaog</span>-->
-                                <!--</li>-->
-                                <!--<li class="user-bind-item">-->
-                                    <!--<input type="radio" name="bind">-->
-                                    <!--<span>Xiaohuoxing</span>-->
-                                <!--</li>-->
-                                <!--<li class="user-bind-item">-->
-                                    <!--<input type="radio" name="bind">-->
-                                    <!--<span>Xiaohu</span>-->
-                                <!--</li>-->
-                                <!--<li class="user-bind-item">-->
-                                    <!--<input type="radio" name="bind">-->
-                                    <!--<span>Xiaohuoxing</span>-->
-                                <!--</li>-->
-                                <!--<li class="user-bind-item disabled">-->
-                                    <!--<input type="radio" name="bind" disabled>-->
-                                    <!--<span>Xiaoing</span>-->
-                                <!--</li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
-                        <!--<p class="user-bind-tip">您当前选择的成员是: <span></span></p>-->
-                    <!--</form>-->
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -302,16 +259,31 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <!--用户列表模板-->
+    <script id="userListTemp" type="text/x-handlebars-template">
+        {{#each users}}
+        <tr data-id="{{id}}">
+            <td class="user-name">{{username}}</td>
+            <td>{{name}}</td>
+            <td>{{user.roleSet}}</td>
+            <td class="table-toolbar">
+                <a href="#" class="user-cog-btn icon-cog"></a>
+                <a href="#" class="user-bind-btn icon-link"></a>
+                <a href="#" class="user-del-btn icon-bin"></a>
+            </td>
+        </tr>
+        {{/each}}
+    </script>
+
+    <!--用户绑定模态框模板-->
     <script id="userBindModal" type="text/x-handlebars-template">
         <div class="user-bind-area">
             <label class="user-bind-title">当前绑定关系：</label>
             <div class="user-bind-aspect">
-                <img src="img/user.png">
                 <p>{{username}}</p>
             </div>
             <img src="img/arrow.png" class="user-bind-arrow">
             <div class="user-bind-aspect">
-                <img src="img/man.png">
                 <p>{{membername}}</p>
             </div>
         </div>

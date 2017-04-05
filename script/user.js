@@ -25,16 +25,23 @@ require(['jquery','jquery.modal','handlebars','script/util/sidebar.js','script/u
     })
 
     $(document).on("click",'.user-bind-btn',function () {
+        // 数据获取和渲染
         var myTemplate = Handlebars.compile($("#userBindModal").html());
         $.ajax({url:"data/data.json",
             success:
-            function (data) {
-            console.log('ok');
-            console.log(data);
-                $('#userBindBody').html(myTemplate(data.user));
-            }})
+                function (data) {
+                    $('#userBindBody').html(myTemplate(data.user));
+                }})
         $(".user-bind-modal").modal();
     })
+
+    // 数据获取和渲染
+    var userListTemplate = Handlebars.compile($("#userListTemp").html());
+    $.ajax({url:"data/data.json",
+        success:
+            function (data) {
+                $('#userList').html(userListTemplate(data));
+            }})
 
     $(document).on("click",'.user-add-btn',function () {
         $(".user-add-modal").modal();

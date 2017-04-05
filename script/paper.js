@@ -3,19 +3,30 @@
  */
 requirejs.config({
     shim: {
-        'jquery.modal': ['jquery']
+        'jquery.modal': ['jquery'],
+        'handlebars': ['jquery']
     },
     paths:{
         'jquery':'lib/jquery-1.7.1.min',
-        'jquery.modal': 'lib/jquery.modal'
+        'jquery.modal': 'lib/jquery.modal',
+        'handlebars': 'lib/handlebars'
     }
 });
 
-require(['jquery','jquery.modal','script/util/sidebar.js','script/util/reset.js','script/util/alert.js','script/util/validate.js'],function ($,modal,sidebar,reset,alert,validate) {
+require(['jquery','jquery.modal','script/util/sidebar.js','script/util/reset.js','script/util/alert.js','script/util/validate.js','handlebars'],function ($,modal,sidebar,reset,alert,validate,Handlebars) {
     var irSidebar = sidebar('.ir-sidebar',['.ir-main','.ir-header','.ir-footer'],'.icon-menu');
     irSidebar.init(240);
 
     $(document).on("click",".paper-add-btn",function () {
+        // 数据获取和渲染
+        var memListTemplate = Handlebars.compile($("#memberItemTemp").html());
+        $.ajax({
+            url:"data/data.json",
+            success:
+                function (data) {
+                    $('#memberList').html(memListTemplate(data.user));
+                }
+        })
         $(".paper-add-modal").modal();
     })
 
@@ -35,6 +46,15 @@ require(['jquery','jquery.modal','script/util/sidebar.js','script/util/reset.js'
         myAlert.init();
     })
 
+    var pubListTemplate = Handlebars.compile($("#pubListTemp").html());
+    $.ajax({
+        url:"data/data.json",
+        success:
+            function (data) {
+                console.log("ok");
+                $('#pubAreaList').html(pubListTemplate(data));
+            }
+    })
 
     $('.paper-add-modal').on('hidden.bs.modal', function (e) {
         reset('.paper-add-form');

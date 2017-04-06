@@ -284,7 +284,7 @@
             </div>
             <img src="img/arrow.png" class="user-bind-arrow">
             <div class="user-bind-aspect">
-                <p>{{membername}}</p>
+                {{#if membername}} <p>{{membername}}</p> {{else}} <p>未绑定</p> {{/if}}
             </div>
         </div>
         <form class="user-bind-form">

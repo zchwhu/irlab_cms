@@ -26,6 +26,15 @@ define(['jquery','script/util/validate.js'],function ($,validate) {
                         message:"密码不能为空,请输入登录密码"
                     }
                 }
+            },
+            // 校验验证码
+            verification:{
+                parent: ".ir-login-form-group",
+                validators:{
+                    notEmpty:{
+                        message:"验证码不能为空,请输入验证码"
+                    }
+                }
             }
         })
         return $isValid;

@@ -50,7 +50,7 @@ body,html{
   .borderRadius(5px);
   .boxShadow(0 4px 8px 0 rgba(7,17,27,.1));
   .boxSizing();
-  img{
+  &>img{
     display: block;
     width: auto;
     height: 100px;
@@ -91,6 +91,32 @@ body,html{
     color: #555;
     background-color: transparent;
     font-family: @fontStack;
+  }
+}
+
+.ir-login-form-group{
+  margin: 20px 0;
+  font-size: 0;
+}
+
+.ir-login-form-group .ir-login-form-control{
+  .displayInlineBlock();
+  width: 60%;
+  margin: 0;
+  vertical-align: top;
+  .boxSizing();
+  font-size: 16px;
+}
+
+.ir-login-form-img{
+  .displayInlineBlock();
+  width: 40%;
+  padding-left: 3%;
+  .boxSizing();
+  vertical-align: top;
+  img{
+    width: 100%;
+    height: 42px;
   }
 }
 

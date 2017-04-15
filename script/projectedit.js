@@ -16,6 +16,8 @@ requirejs.config({
 
 require(['jquery','script/util/sidebar.js','script/util/upload.js','script/util/validate.js','wangEditor','bootstrap-datetimepicker'],function ($,sidebar,upload,validate,editor,picker) {
     $(function () {
+        $(".ir-menu-item").eq(4).addClass('active');
+
         var irSidebar = sidebar('.ir-sidebar',['.ir-main','.ir-header','.ir-footer'],'.icon-menu');
         irSidebar.init(240);
 

@@ -12,6 +12,8 @@ requirejs.config({
 });
 
 require(['jquery','script/util/sidebar.js','script/util/alert.js','handlebars'],function ($,sidebar,alert,Handlebars) {
+    $(".ir-menu-item").eq(4).addClass('active');
+
     var irSidebar = sidebar('.ir-sidebar',['.ir-main','.ir-header','.ir-footer'],'.icon-menu');
     irSidebar.init(240);
 

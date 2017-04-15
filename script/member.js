@@ -8,6 +8,8 @@ requirejs.config({
 });
 
 require(['jquery','script/util/sidebar.js','script/util/alert.js'],function ($,sidebar,alert) {
+    $(".ir-menu-item").eq(1).addClass('active');
+
     var irSidebar = sidebar('.ir-sidebar',['.ir-main','.ir-header','.ir-footer'],'.icon-menu');
     irSidebar.init(240);
 

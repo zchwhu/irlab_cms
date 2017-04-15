@@ -14,6 +14,8 @@ requirejs.config({
 });
 
 require(['jquery','jquery.modal','handlebars','script/util/sidebar.js','script/util/alert.js','script/util/reset.js','script/util/validate.js'],function ($,modal,Handlebars,sidebar,alert,reset,validate) {
+    $(".ir-menu-item").eq(0).addClass('active');
+
     var SIDEBAR_WIDTH = 240;
     var irSidebar = sidebar('.ir-sidebar',['.ir-main','.ir-header','.ir-footer'],'.icon-menu');
     irSidebar.init(SIDEBAR_WIDTH);
